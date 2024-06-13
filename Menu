@@ -1,1 +1,135 @@
+[Rainmeter]
+Update=10000
+BackgroundMode=1
+MiddleMouseUpAction=!Execute ["#CURRENTPATH#Apps.txt"]
 
+[Metadata]
+Name=Launcher
+Version=1.0
+
+[Variables]
+FontColorPassive=255,255,255,255
+FontColorActive=f2f2f2
+FontFace=Anurati
+FontSize=25
+FontEffectColor=3a3a3a
+#include "Apps.txt"
+
+; ===========App1===========
+
+[AppButton1Passive]
+Meter=STRING
+x=0
+y=0
+SolidColor=0,0,0,1 ; Clear background
+Text=D I S C O R D
+FontFace=#FontFace#
+FontSize=#FontSize#
+FontColor=#FontColorPassive#
+StringAlign=LEFT
+StringEffect=#StringEffect#
+FontEffectColor=#FontEffectColor#
+AntiAlias=1
+
+LeftMouseUpAction=!Execute ["C:\Users\USER\AppData\Local\Discord\Update.exe"]
+
+MouseOverAction=[!SetOption AppButton1Passive X 30][!UpdateMeter AppButton1Passive][!Redraw]
+MouseLeaveAction=[!SetOption AppButton1Passive X 0][!UpdateMeter AppButton1Passive][!Redraw]
+
+[Rainmeter]
+Update=10000
+BackgroundMode=1
+MiddleMouseUpAction=!Execute ["#CURRENTPATH#Apps.txt"]
+
+[Metadata]
+Name=Launcher
+Version=1.0
+
+[Variables]
+FontColorPassive=255,255,255,255
+FontColorActive=f2f2f2
+FontFace=Anurati
+FontSize=35
+FontEffectColor=3a3a3a
+#include "Apps.txt"
+
+; ===========App1===========
+
+[AppButton1Passive]
+Meter=STRING
+x=0
+y=0
+SolidColor=0,0,0,1 ; Clear background
+Text=D I S C O R D
+FontFace=#FontFace#
+FontSize=#FontSize#
+FontColor=#FontColorPassive#
+StringAlign=LEFT
+StringEffect=#StringEffect#
+FontEffectColor=#FontEffectColor#
+AntiAlias=1
+
+LeftMouseUpAction=!Execute ["C:\Users\USER\AppData\Local\Discord\app-1.0.9017\Discord.exe"]
+
+MouseOverAction=[!SetOption AppButton1Passive X 30][!UpdateMeter AppButton1Passive][!Redraw]
+MouseLeaveAction=[!SetOption AppButton1Passive X 0][!UpdateMeter AppButton1Passive][!Redraw]
+
+; ===========Button 2===========
+[AppButton2Passive]
+Meter=STRING
+x=0
+y=50r
+SolidColor=0,0,0,1 ; Clear background
+Text=O B S
+FontFace=#FontFace#
+FontSize=#FontSize#
+FontColor=#FontColorPassive#
+StringAlign=LEFT
+StringEffect=#StringEffect#
+FontEffectColor=#FontEffectColor#
+AntiAlias=1
+
+LeftMouseUpAction=!Execute ["C:\Program Files\obs-studio\bin\64bit\obs64.exe"]
+
+MouseOverAction=[!SetOption AppButton2Passive X 30][!UpdateMeter AppButton2Passive][!Redraw]
+MouseLeaveAction=[!SetOption AppButton2Passive X 0][!UpdateMeter AppButton2Passive][!Redraw]
+
+; ===========Button 3===========
+[AppButton3Passive]
+Meter=STRING
+x=0
+y=50r
+SolidColor=0,0,0,1 ; Clear background
+Text=S P O T I F Y
+FontFace=#FontFace#
+FontSize=#FontSize#
+FontColor=#FontColorPassive#
+StringAlign=LEFT
+StringEffect=#StringEffect#
+FontEffectColor=#FontEffectColor#
+AntiAlias=1
+
+LeftMouseUpAction=!Execute ["C:\Users\USER\AppData\Roaming\Spotify\Spotify.exe"]
+
+MouseOverAction=[!SetOption AppButton3Passive X 30][!UpdateMeter AppButton3Passive][!Redraw]
+MouseLeaveAction=[!SetOption AppButton3Passive X 0][!UpdateMeter AppButton3Passive][!Redraw]
+
+; ===========Button 4===========
+[AppButton4Passive]
+Meter=STRING
+x=0
+y=50r
+SolidColor=0,0,0,1 ; Clear background
+Text=S T E A M
+FontFace=#FontFace#
+FontSize=#FontSize#
+FontColor=#FontColorPassive#
+StringAlign=LEFT
+StringEffect=#StringEffect#
+FontEffectColor=#FontEffectColor#
+AntiAlias=1
+
+LeftMouseUpAction=!Execute ["C:\Program Files (x86)\Steam.exe"]
+
+MouseOverAction=[!SetOption AppButton4Passive X 30][!UpdateMeter AppButton4Passive][!Redraw]
+MouseLeaveAction=[!SetOption AppButton4Passive X 0][!UpdateMeter AppButton4Passive][!Redraw]
